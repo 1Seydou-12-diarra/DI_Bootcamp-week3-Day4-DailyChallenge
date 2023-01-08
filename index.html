@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+  
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgb(199, 48, 48);
+  font-family: sans-serif;
+}
+  
+
+  
+ul {
+  list-style-type: none; 
+}
+  
+
+  
+ 
+.contenu {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+  
+h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+  
+
+.forms {
+  margin: 40px 0px;
+  border: 1px solid black;
+  background-color: #fff;
+  width: 360px;
+}
+  
+.input {
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+  
+.button {
+  background-color:white;
+  color:blue;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+  
+ 
+.listTasks {
+  min-width: 350px;
+  
+}
+.list{
+  border: 1px solid white;
+  width: 360px;
+  height: 500px;
+  background-color: #fff;
+}
+ 
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+  display: flex;
+}
+  
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+  
+.item:last-child {
+margin-left: 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.checkbox {
+   margin-left: 5px;
+}
+  
+.delete-button {
+  float: left;
+  background-color: #dc143c;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: 550;
+}
+  
+  
+.checked { 
+  text-decoration: line-through;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>la liste de tâches</title>
+</head>
+<body>
+    <div class="contenu">
+        <h2>TO-DO LIST</h2>
+    
+        <form class="forms" id="form">
+          <input type="text" class="input" placeholder="New Task..." id="task">
+          <button type="submit" class="button">Add</button>
+        </form>
+      <div class="list">
+        <div class="listTasks">
+          
+        </div>
+      </div> 
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
